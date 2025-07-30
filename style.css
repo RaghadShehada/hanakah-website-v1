@@ -1,0 +1,142 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #fdfcf9;
+  color: #4b3f2f;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #f5f0e6, #e8e2d6);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #8B5A2B;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.buttons .btn, .buttons .btn-outline {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: #8B5A2B;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #a66a3c;
+}
+
+.btn-outline {
+  border: 2px solid #8B5A2B;
+  color: #8B5A2B;
+}
+
+.btn-outline:hover {
+  background-color: #f5f0e6;
+}
+
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  color: #5c4433;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 4px solid #8B5A2B;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f5f0e6;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #8B5A2B;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #a66a3c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f0e6;
+  color: #8B5A2B;
+}
+/* تأثير الظهور التدريجي */
+section, .card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* تأثير عند تمرير الماوس على البطاقات */
+.card:hover {
+  background-color: #e8e2d6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
